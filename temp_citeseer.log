@@ -1,0 +1,602 @@
+{'dataset': 'citeseer', 'model': 'gcn', 'learning_rate': 0.01, 'epochs': 400, 'hidden1': 16, 'dropout': 0.0, 'weight_decay': 0.0005, 'early_stopping': 10, 'max_degree': 3, 'epsilon': 0.01, 'epsilon_graph': 0.01, 'num_power_iterations': 1, 'xi': 1e-06, 'alpha': 0.001, 'beta': 0.5, 'mask_vat': False, 'reload': False, 'model_path': './model/vat/cora/model', 'model_save_path': './model/vat/cora/model', 'num_neighbors': 2, 'vat_loss': True, 'gat_loss': True, 'emb_all': False, 'sampling': 'uniform'}
+(3327, 3327)
+Epoch: 0001 tr_obj= 1.8017 tr_acc= 0.1417 tr_loss= 1.7920 tr_l2= 19.3549 tr_vat= 0.000000 tr_gat= 0.000001
+Epoch: 0001 va_obj= 1.7967 va_acc= 0.4420 va_loss= 1.7899 va_l2= 13.5743 va_vat= -0.000000 va_gat= 0.000003
+------- time= 1.02765 ------
+Epoch: 0002 tr_obj= 1.7929 tr_acc= 0.8250 tr_loss= 1.7861 tr_l2= 13.5743 tr_vat= -0.000000 tr_gat= 0.000003
+Epoch: 0002 va_obj= 1.7925 va_acc= 0.5400 va_loss= 1.7867 va_l2= 11.6090 va_vat= 0.000000 va_gat= 0.000027
+------- time= 0.69495 ------
+Epoch: 0003 tr_obj= 1.7843 tr_acc= 0.8417 tr_loss= 1.7785 tr_l2= 11.6090 tr_vat= 0.000000 tr_gat= 0.000027
+Epoch: 0003 va_obj= 1.7899 va_acc= 0.5560 va_loss= 1.7834 va_l2= 12.9646 va_vat= 0.000000 va_gat= 0.000094
+------- time= 0.69292 ------
+Epoch: 0004 tr_obj= 1.7760 tr_acc= 0.8667 tr_loss= 1.7695 tr_l2= 12.9646 tr_vat= 0.000000 tr_gat= 0.000101
+Epoch: 0004 va_obj= 1.7885 va_acc= 0.5640 va_loss= 1.7800 va_l2= 16.8333 va_vat= 0.000000 va_gat= 0.000222
+------- time= 0.70077 ------
+Epoch: 0005 tr_obj= 1.7682 tr_acc= 0.8917 tr_loss= 1.7597 tr_l2= 16.8333 tr_vat= -0.000000 tr_gat= 0.000221
+Epoch: 0005 va_obj= 1.7878 va_acc= 0.5600 va_loss= 1.7763 va_l2= 22.5071 va_vat= 0.000000 va_gat= 0.000394
+------- time= 0.69208 ------
+Epoch: 0006 tr_obj= 1.7605 tr_acc= 0.9417 tr_loss= 1.7491 tr_l2= 22.5071 tr_vat= 0.000000 tr_gat= 0.000380
+Epoch: 0006 va_obj= 1.7874 va_acc= 0.5700 va_loss= 1.7724 va_l2= 29.4427 va_vat= 0.000000 va_gat= 0.000598
+------- time= 0.69393 ------
+Epoch: 0007 tr_obj= 1.7530 tr_acc= 0.9417 tr_loss= 1.7380 tr_l2= 29.4427 tr_vat= -0.000000 tr_gat= 0.000602
+Epoch: 0007 va_obj= 1.7873 va_acc= 0.5800 va_loss= 1.7683 va_l2= 37.2019 va_vat= 0.000000 va_gat= 0.000872
+------- time= 0.69909 ------
+Epoch: 0008 tr_obj= 1.7454 tr_acc= 0.9417 tr_loss= 1.7264 tr_l2= 37.2019 tr_vat= -0.000000 tr_gat= 0.000892
+Epoch: 0008 va_obj= 1.7873 va_acc= 0.5740 va_loss= 1.7640 va_l2= 45.5050 va_vat= -0.000000 va_gat= 0.001224
+------- time= 0.70840 ------
+Epoch: 0009 tr_obj= 1.7377 tr_acc= 0.9417 tr_loss= 1.7144 tr_l2= 45.5050 tr_vat= -0.000000 tr_gat= 0.001225
+Epoch: 0009 va_obj= 1.7875 va_acc= 0.5740 va_loss= 1.7596 va_l2= 54.1984 va_vat= -0.000000 va_gat= 0.001611
+------- time= 0.70246 ------
+Epoch: 0010 tr_obj= 1.7300 tr_acc= 0.9417 tr_loss= 1.7021 tr_l2= 54.1984 tr_vat= -0.000000 tr_gat= 0.001610
+Epoch: 0010 va_obj= 1.7877 va_acc= 0.5840 va_loss= 1.7551 va_l2= 63.2073 va_vat= 0.000000 va_gat= 0.002050
+------- time= 0.70647 ------
+Epoch: 0011 tr_obj= 1.7221 tr_acc= 0.9417 tr_loss= 1.6895 tr_l2= 63.2073 tr_vat= 0.000000 tr_gat= 0.001937
+Epoch: 0011 va_obj= 1.7880 va_acc= 0.5840 va_loss= 1.7506 va_l2= 72.4521 va_vat= -0.000000 va_gat= 0.002407
+------- time= 0.68265 ------
+Epoch: 0012 tr_obj= 1.7142 tr_acc= 0.9417 tr_loss= 1.6767 tr_l2= 72.4521 tr_vat= -0.000000 tr_gat= 0.002548
+Epoch: 0012 va_obj= 1.7885 va_acc= 0.5860 va_loss= 1.7460 va_l2= 81.9256 va_vat= 0.000000 va_gat= 0.003101
+------- time= 0.70226 ------
+Epoch: 0013 tr_obj= 1.7062 tr_acc= 0.9417 tr_loss= 1.6637 tr_l2= 81.9256 tr_vat= 0.000000 tr_gat= 0.003131
+Epoch: 0013 va_obj= 1.7891 va_acc= 0.5820 va_loss= 1.7414 va_l2= 91.6294 va_vat= 0.000000 va_gat= 0.003748
+------- time= 0.70467 ------
+Epoch: 0014 tr_obj= 1.6980 tr_acc= 0.9333 tr_loss= 1.6504 tr_l2= 91.6294 tr_vat= 0.000000 tr_gat= 0.003629
+Epoch: 0014 va_obj= 1.7895 va_acc= 0.5820 va_loss= 1.7366 va_l2= 101.5117 va_vat= 0.000000 va_gat= 0.004280
+------- time= 0.70790 ------
+Epoch: 0015 tr_obj= 1.6897 tr_acc= 0.9333 tr_loss= 1.6368 tr_l2= 101.5117 tr_vat= -0.000000 tr_gat= 0.004297
+Epoch: 0015 va_obj= 1.7899 va_acc= 0.5840 va_loss= 1.7316 va_l2= 111.5320 va_vat= -0.000000 va_gat= 0.005016
+------- time= 0.69152 ------
+Epoch: 0016 tr_obj= 1.6812 tr_acc= 0.9333 tr_loss= 1.6230 tr_l2= 111.5320 tr_vat= 0.000000 tr_gat= 0.004977
+Epoch: 0016 va_obj= 1.7902 va_acc= 0.5880 va_loss= 1.7265 va_l2= 121.6663 va_vat= 0.000000 va_gat= 0.005754
+------- time= 0.70402 ------
+Epoch: 0017 tr_obj= 1.6727 tr_acc= 0.9333 tr_loss= 1.6089 tr_l2= 121.6663 tr_vat= -0.000000 tr_gat= 0.005943
+Epoch: 0017 va_obj= 1.7905 va_acc= 0.5900 va_loss= 1.7211 va_l2= 131.9039 va_vat= -0.000000 va_gat= 0.006819
+------- time= 0.70463 ------
+Epoch: 0018 tr_obj= 1.6638 tr_acc= 0.9333 tr_loss= 1.5946 tr_l2= 131.9039 tr_vat= -0.000000 tr_gat= 0.006556
+Epoch: 0018 va_obj= 1.7905 va_acc= 0.5920 va_loss= 1.7157 va_l2= 142.2220 va_vat= -0.000000 va_gat= 0.007461
+------- time= 0.68842 ------
+Epoch: 0019 tr_obj= 1.6550 tr_acc= 0.9333 tr_loss= 1.5800 tr_l2= 142.2220 tr_vat= -0.000000 tr_gat= 0.007693
+Epoch: 0019 va_obj= 1.7907 va_acc= 0.5920 va_loss= 1.7100 va_l2= 152.6346 va_vat= -0.000000 va_gat= 0.008699
+------- time= 0.69760 ------
+Epoch: 0020 tr_obj= 1.6457 tr_acc= 0.9333 tr_loss= 1.5651 tr_l2= 152.6346 tr_vat= -0.000000 tr_gat= 0.008518
+Epoch: 0020 va_obj= 1.7906 va_acc= 0.5980 va_loss= 1.7042 va_l2= 163.1469 va_vat= -0.000000 va_gat= 0.009607
+------- time= 0.70310 ------
+Epoch: 0021 tr_obj= 1.6365 tr_acc= 0.9333 tr_loss= 1.5500 tr_l2= 163.1469 tr_vat= -0.000000 tr_gat= 0.009801
+Epoch: 0021 va_obj= 1.7907 va_acc= 0.5960 va_loss= 1.6983 va_l2= 173.8286 va_vat= 0.000000 va_gat= 0.010965
+------- time= 0.69305 ------
+Epoch: 0022 tr_obj= 1.6268 tr_acc= 0.9333 tr_loss= 1.5346 tr_l2= 173.8286 tr_vat= 0.000000 tr_gat= 0.010673
+Epoch: 0022 va_obj= 1.7904 va_acc= 0.5960 va_loss= 1.6922 va_l2= 184.6819 va_vat= -0.000000 va_gat= 0.011884
+------- time= 0.69908 ------
+Epoch: 0023 tr_obj= 1.6174 tr_acc= 0.9333 tr_loss= 1.5188 tr_l2= 184.6819 tr_vat= -0.000000 tr_gat= 0.012326
+Epoch: 0023 va_obj= 1.7905 va_acc= 0.6060 va_loss= 1.6858 va_l2= 195.7086 va_vat= 0.000000 va_gat= 0.013709
+------- time= 0.69687 ------
+Epoch: 0024 tr_obj= 1.6074 tr_acc= 0.9333 tr_loss= 1.5029 tr_l2= 195.7086 tr_vat= -0.000000 tr_gat= 0.013450
+Epoch: 0024 va_obj= 1.7902 va_acc= 0.6060 va_loss= 1.6793 va_l2= 206.9199 va_vat= 0.000000 va_gat= 0.014887
+------- time= 0.70418 ------
+Epoch: 0025 tr_obj= 1.5976 tr_acc= 0.9333 tr_loss= 1.4866 tr_l2= 206.9199 tr_vat= 0.000000 tr_gat= 0.015042
+Epoch: 0025 va_obj= 1.7901 va_acc= 0.6060 va_loss= 1.6727 va_l2= 218.3134 va_vat= 0.000000 va_gat= 0.016577
+------- time= 0.70337 ------
+Epoch: 0026 tr_obj= 1.5874 tr_acc= 0.9333 tr_loss= 1.4700 tr_l2= 218.3134 tr_vat= 0.000000 tr_gat= 0.016484
+Epoch: 0026 va_obj= 1.7899 va_acc= 0.6100 va_loss= 1.6659 va_l2= 229.8870 va_vat= 0.000000 va_gat= 0.018132
+------- time= 0.70184 ------
+Epoch: 0027 tr_obj= 1.5770 tr_acc= 0.9417 tr_loss= 1.4531 tr_l2= 229.8870 tr_vat= 0.000000 tr_gat= 0.017863
+Epoch: 0027 va_obj= 1.7895 va_acc= 0.6160 va_loss= 1.6589 va_l2= 241.6666 va_vat= 0.000000 va_gat= 0.019619
+------- time= 0.70292 ------
+Epoch: 0028 tr_obj= 1.5665 tr_acc= 0.9417 tr_loss= 1.4361 tr_l2= 241.6666 tr_vat= 0.000000 tr_gat= 0.019249
+Epoch: 0028 va_obj= 1.7891 va_acc= 0.6180 va_loss= 1.6518 va_l2= 253.5475 va_vat= 0.000000 va_gat= 0.021080
+------- time= 0.69377 ------
+Epoch: 0029 tr_obj= 1.5563 tr_acc= 0.9417 tr_loss= 1.4187 tr_l2= 253.5475 tr_vat= 0.000000 tr_gat= 0.021493
+Epoch: 0029 va_obj= 1.7890 va_acc= 0.6200 va_loss= 1.6444 va_l2= 265.5880 va_vat= 0.000000 va_gat= 0.023476
+------- time= 0.70039 ------
+Epoch: 0030 tr_obj= 1.5460 tr_acc= 0.9417 tr_loss= 1.4012 tr_l2= 265.5880 tr_vat= -0.000000 tr_gat= 0.023923
+Epoch: 0030 va_obj= 1.7888 va_acc= 0.6300 va_loss= 1.6369 va_l2= 277.7312 va_vat= 0.000000 va_gat= 0.026080
+------- time= 0.69571 ------
+Epoch: 0031 tr_obj= 1.5351 tr_acc= 0.9417 tr_loss= 1.3835 tr_l2= 277.7312 tr_vat= 0.000000 tr_gat= 0.025602
+Epoch: 0031 va_obj= 1.7881 va_acc= 0.6300 va_loss= 1.6293 va_l2= 289.9584 va_vat= 0.000000 va_gat= 0.027794
+------- time= 0.71030 ------
+Epoch: 0032 tr_obj= 1.5249 tr_acc= 0.9583 tr_loss= 1.3656 tr_l2= 289.9584 tr_vat= 0.000000 tr_gat= 0.028749
+Epoch: 0032 va_obj= 1.7882 va_acc= 0.6360 va_loss= 1.6215 va_l2= 302.2400 va_vat= 0.000000 va_gat= 0.031130
+------- time= 0.69940 ------
+Epoch: 0033 tr_obj= 1.5140 tr_acc= 0.9500 tr_loss= 1.3476 tr_l2= 302.2400 tr_vat= 0.000000 tr_gat= 0.030546
+Epoch: 0033 va_obj= 1.7874 va_acc= 0.6400 va_loss= 1.6136 va_l2= 314.5459 va_vat= 0.000000 va_gat= 0.032995
+------- time= 0.69682 ------
+Epoch: 0034 tr_obj= 1.5030 tr_acc= 0.9500 tr_loss= 1.3295 tr_l2= 314.5459 tr_vat= 0.000000 tr_gat= 0.032463
+Epoch: 0034 va_obj= 1.7866 va_acc= 0.6420 va_loss= 1.6056 va_l2= 326.9189 va_vat= 0.000000 va_gat= 0.035036
+------- time= 0.69755 ------
+Epoch: 0035 tr_obj= 1.4922 tr_acc= 0.9583 tr_loss= 1.3112 tr_l2= 326.9189 tr_vat= 0.000000 tr_gat= 0.034981
+Epoch: 0035 va_obj= 1.7859 va_acc= 0.6460 va_loss= 1.5974 va_l2= 339.3370 va_vat= 0.000000 va_gat= 0.037667
+------- time= 0.70265 ------
+Epoch: 0036 tr_obj= 1.4818 tr_acc= 0.9583 tr_loss= 1.2929 tr_l2= 339.3370 tr_vat= 0.000000 tr_gat= 0.038550
+Epoch: 0036 va_obj= 1.7856 va_acc= 0.6480 va_loss= 1.5890 va_l2= 351.7118 va_vat= 0.000000 va_gat= 0.041447
+------- time= 0.71329 ------
+Epoch: 0037 tr_obj= 1.4707 tr_acc= 0.9583 tr_loss= 1.2745 tr_l2= 351.7118 tr_vat= 0.000000 tr_gat= 0.040711
+Epoch: 0037 va_obj= 1.7843 va_acc= 0.6500 va_loss= 1.5805 va_l2= 364.0151 va_vat= 0.000000 va_gat= 0.043628
+------- time= 0.70675 ------
+Epoch: 0038 tr_obj= 1.4599 tr_acc= 0.9583 tr_loss= 1.2561 tr_l2= 364.0151 tr_vat= 0.000000 tr_gat= 0.043491
+Epoch: 0038 va_obj= 1.7833 va_acc= 0.6560 va_loss= 1.5719 va_l2= 376.1991 va_vat= 0.000000 va_gat= 0.046509
+------- time= 0.70092 ------
+Epoch: 0039 tr_obj= 1.4493 tr_acc= 0.9583 tr_loss= 1.2378 tr_l2= 376.1991 tr_vat= 0.000000 tr_gat= 0.046728
+Epoch: 0039 va_obj= 1.7824 va_acc= 0.6560 va_loss= 1.5633 va_l2= 388.2826 va_vat= 0.000000 va_gat= 0.049813
+------- time= 0.69827 ------
+Epoch: 0040 tr_obj= 1.4385 tr_acc= 0.9583 tr_loss= 1.2195 tr_l2= 388.2826 tr_vat= 0.000000 tr_gat= 0.049704
+Epoch: 0040 va_obj= 1.7811 va_acc= 0.6600 va_loss= 1.5544 va_l2= 400.2752 va_vat= 0.000000 va_gat= 0.053017
+------- time= 0.69950 ------
+Epoch: 0041 tr_obj= 1.4277 tr_acc= 0.9583 tr_loss= 1.2013 tr_l2= 400.2752 tr_vat= 0.000000 tr_gat= 0.052484
+Epoch: 0041 va_obj= 1.7795 va_acc= 0.6580 va_loss= 1.5455 va_l2= 412.2209 va_vat= 0.000000 va_gat= 0.055795
+------- time= 0.68902 ------
+Epoch: 0042 tr_obj= 1.4170 tr_acc= 0.9583 tr_loss= 1.1832 tr_l2= 412.2209 tr_vat= 0.000000 tr_gat= 0.055443
+Epoch: 0042 va_obj= 1.7779 va_acc= 0.6620 va_loss= 1.5365 va_l2= 424.0826 va_vat= 0.000000 va_gat= 0.058809
+------- time= 0.68957 ------
+Epoch: 0043 tr_obj= 1.4079 tr_acc= 0.9500 tr_loss= 1.1650 tr_l2= 424.0826 tr_vat= 0.000000 tr_gat= 0.061711
+Epoch: 0043 va_obj= 1.7779 va_acc= 0.6600 va_loss= 1.5273 va_l2= 435.7523 va_vat= 0.000000 va_gat= 0.065387
+------- time= 0.70202 ------
+Epoch: 0044 tr_obj= 1.3973 tr_acc= 0.9500 tr_loss= 1.1470 tr_l2= 435.7523 tr_vat= 0.000000 tr_gat= 0.064847
+Epoch: 0044 va_obj= 1.7761 va_acc= 0.6600 va_loss= 1.5182 va_l2= 447.1902 va_vat= 0.000000 va_gat= 0.068517
+------- time= 0.70671 ------
+Epoch: 0045 tr_obj= 1.3865 tr_acc= 0.9500 tr_loss= 1.1292 tr_l2= 447.1902 tr_vat= 0.000000 tr_gat= 0.067306
+Epoch: 0045 va_obj= 1.7738 va_acc= 0.6620 va_loss= 1.5090 va_l2= 458.5367 va_vat= 0.000000 va_gat= 0.071019
+------- time= 0.68576 ------
+Epoch: 0046 tr_obj= 1.3770 tr_acc= 0.9500 tr_loss= 1.1115 tr_l2= 458.5367 tr_vat= 0.000000 tr_gat= 0.072316
+Epoch: 0046 va_obj= 1.7725 va_acc= 0.6620 va_loss= 1.4996 va_l2= 469.6249 va_vat= 0.000000 va_gat= 0.076218
+------- time= 0.69692 ------
+Epoch: 0047 tr_obj= 1.3661 tr_acc= 0.9500 tr_loss= 1.0941 tr_l2= 469.6249 tr_vat= 0.000000 tr_gat= 0.074337
+Epoch: 0047 va_obj= 1.7697 va_acc= 0.6640 va_loss= 1.4903 va_l2= 480.5440 va_vat= 0.000000 va_gat= 0.078194
+------- time= 0.69487 ------
+Epoch: 0048 tr_obj= 1.3558 tr_acc= 0.9500 tr_loss= 1.0767 tr_l2= 480.5440 tr_vat= 0.000000 tr_gat= 0.077563
+Epoch: 0048 va_obj= 1.7674 va_acc= 0.6660 va_loss= 1.4811 va_l2= 491.2150 va_vat= 0.000000 va_gat= 0.081416
+------- time= 0.71645 ------
+Epoch: 0049 tr_obj= 1.3454 tr_acc= 0.9500 tr_loss= 1.0596 tr_l2= 491.2150 tr_vat= 0.000000 tr_gat= 0.080361
+Epoch: 0049 va_obj= 1.7649 va_acc= 0.6700 va_loss= 1.4718 va_l2= 501.6523 va_vat= 0.000000 va_gat= 0.084379
+------- time= 0.68505 ------
+Epoch: 0050 tr_obj= 1.3368 tr_acc= 0.9417 tr_loss= 1.0427 tr_l2= 501.6523 tr_vat= 0.000000 tr_gat= 0.086564
+Epoch: 0050 va_obj= 1.7637 va_acc= 0.6740 va_loss= 1.4624 va_l2= 511.9401 va_vat= 0.000000 va_gat= 0.090675
+------- time= 0.70241 ------
+Epoch: 0051 tr_obj= 1.3267 tr_acc= 0.9417 tr_loss= 1.0260 tr_l2= 511.9401 tr_vat= 0.000000 tr_gat= 0.089512
+Epoch: 0051 va_obj= 1.7608 va_acc= 0.6740 va_loss= 1.4529 va_l2= 522.0103 va_vat= 0.000000 va_gat= 0.093646
+------- time= 0.70850 ------
+Epoch: 0052 tr_obj= 1.3179 tr_acc= 0.9417 tr_loss= 1.0094 tr_l2= 522.0103 tr_vat= 0.000000 tr_gat= 0.094945
+Epoch: 0052 va_obj= 1.7592 va_acc= 0.6720 va_loss= 1.4438 va_l2= 531.7648 va_vat= 0.000000 va_gat= 0.099113
+------- time= 0.70902 ------
+Epoch: 0053 tr_obj= 1.3101 tr_acc= 0.9500 tr_loss= 0.9933 tr_l2= 531.7648 tr_vat= 0.000000 tr_gat= 0.101916
+Epoch: 0053 va_obj= 1.7582 va_acc= 0.6740 va_loss= 1.4343 va_l2= 541.3323 va_vat= 0.000000 va_gat= 0.106454
+------- time= 0.69247 ------
+Epoch: 0054 tr_obj= 1.2995 tr_acc= 0.9500 tr_loss= 0.9773 tr_l2= 541.3323 tr_vat= 0.000000 tr_gat= 0.103112
+Epoch: 0054 va_obj= 1.7538 va_acc= 0.6780 va_loss= 1.4248 va_l2= 550.6136 va_vat= 0.000000 va_gat= 0.107484
+------- time= 0.70357 ------
+Epoch: 0055 tr_obj= 1.2916 tr_acc= 0.9500 tr_loss= 0.9616 tr_l2= 550.6136 tr_vat= 0.000000 tr_gat= 0.109433
+Epoch: 0055 va_obj= 1.7518 va_acc= 0.6800 va_loss= 1.4151 va_l2= 559.5778 va_vat= 0.000000 va_gat= 0.113908
+------- time= 0.71530 ------
+Epoch: 0056 tr_obj= 1.2822 tr_acc= 0.9500 tr_loss= 0.9462 tr_l2= 559.5778 tr_vat= 0.000000 tr_gat= 0.112463
+Epoch: 0056 va_obj= 1.7481 va_acc= 0.6860 va_loss= 1.4056 va_l2= 568.3135 va_vat= 0.000000 va_gat= 0.116813
+------- time= 0.70132 ------
+Epoch: 0057 tr_obj= 1.2750 tr_acc= 0.9500 tr_loss= 0.9311 tr_l2= 568.3135 tr_vat= 0.000000 tr_gat= 0.119430
+Epoch: 0057 va_obj= 1.7467 va_acc= 0.6860 va_loss= 1.3964 va_l2= 576.6727 va_vat= 0.000000 va_gat= 0.124099
+------- time= 0.70277 ------
+Epoch: 0058 tr_obj= 1.2638 tr_acc= 0.9500 tr_loss= 0.9164 tr_l2= 576.6727 tr_vat= 0.000000 tr_gat= 0.118200
+Epoch: 0058 va_obj= 1.7408 va_acc= 0.6880 va_loss= 1.3872 va_l2= 584.8275 va_vat= 0.000000 va_gat= 0.122513
+------- time= 0.69470 ------
+Epoch: 0059 tr_obj= 1.2573 tr_acc= 0.9500 tr_loss= 0.9018 tr_l2= 584.8275 tr_vat= 0.000000 tr_gat= 0.126196
+Epoch: 0059 va_obj= 1.7397 va_acc= 0.6900 va_loss= 1.3780 va_l2= 592.7254 va_vat= 0.000000 va_gat= 0.130713
+------- time= 0.69804 ------
+Epoch: 0060 tr_obj= 1.2499 tr_acc= 0.9500 tr_loss= 0.8876 tr_l2= 592.7254 tr_vat= 0.000000 tr_gat= 0.131805
+Epoch: 0060 va_obj= 1.7373 va_acc= 0.6900 va_loss= 1.3688 va_l2= 600.4597 va_vat= 0.000000 va_gat= 0.136455
+------- time= 0.70265 ------
+Epoch: 0061 tr_obj= 1.2397 tr_acc= 0.9500 tr_loss= 0.8736 tr_l2= 600.4597 tr_vat= 0.000000 tr_gat= 0.131750
+Epoch: 0061 va_obj= 1.7319 va_acc= 0.6960 va_loss= 1.3599 va_l2= 607.8018 va_vat= 0.000000 va_gat= 0.136388
+------- time= 0.70684 ------
+Epoch: 0062 tr_obj= 1.2340 tr_acc= 0.9583 tr_loss= 0.8600 tr_l2= 607.8018 tr_vat= 0.000000 tr_gat= 0.140316
+Epoch: 0062 va_obj= 1.7308 va_acc= 0.7000 va_loss= 1.3509 va_l2= 614.8928 va_vat= 0.000000 va_gat= 0.144935
+------- time= 0.70139 ------
+Epoch: 0063 tr_obj= 1.2251 tr_acc= 0.9583 tr_loss= 0.8466 tr_l2= 614.8928 tr_vat= 0.000000 tr_gat= 0.141959
+Epoch: 0063 va_obj= 1.7260 va_acc= 0.7020 va_loss= 1.3419 va_l2= 621.6567 va_vat= 0.000000 va_gat= 0.146598
+------- time= 0.70822 ------
+Epoch: 0064 tr_obj= 1.2179 tr_acc= 0.9583 tr_loss= 0.8337 tr_l2= 621.6567 tr_vat= 0.000000 tr_gat= 0.146681
+Epoch: 0064 va_obj= 1.7226 va_acc= 0.7040 va_loss= 1.3330 va_l2= 628.2258 va_vat= 0.000000 va_gat= 0.151040
+------- time= 0.69853 ------
+Epoch: 0065 tr_obj= 1.2096 tr_acc= 0.9583 tr_loss= 0.8209 tr_l2= 628.2258 tr_vat= 0.000000 tr_gat= 0.149052
+Epoch: 0065 va_obj= 1.7181 va_acc= 0.7080 va_loss= 1.3240 va_l2= 634.6506 va_vat= 0.000001 va_gat= 0.153518
+------- time= 0.70502 ------
+Epoch: 0066 tr_obj= 1.2061 tr_acc= 0.9583 tr_loss= 0.8084 tr_l2= 634.6506 tr_vat= 0.000001 tr_gat= 0.160724
+Epoch: 0066 va_obj= 1.7180 va_acc= 0.7140 va_loss= 1.3149 va_l2= 640.8820 va_vat= 0.000001 va_gat= 0.165222
+------- time= 0.70283 ------
+Epoch: 0067 tr_obj= 1.1961 tr_acc= 0.9583 tr_loss= 0.7962 tr_l2= 640.8820 tr_vat= 0.000001 tr_gat= 0.158871
+Epoch: 0067 va_obj= 1.7114 va_acc= 0.7140 va_loss= 1.3063 va_l2= 646.9304 va_vat= 0.000001 va_gat= 0.163142
+------- time= 0.69569 ------
+Epoch: 0068 tr_obj= 1.1912 tr_acc= 0.9667 tr_loss= 0.7842 tr_l2= 646.9304 tr_vat= 0.000001 tr_gat= 0.167012
+Epoch: 0068 va_obj= 1.7100 va_acc= 0.7120 va_loss= 1.2979 va_l2= 652.6486 va_vat= 0.000001 va_gat= 0.171473
+------- time= 0.70238 ------
+Epoch: 0069 tr_obj= 1.1832 tr_acc= 0.9667 tr_loss= 0.7726 tr_l2= 652.6486 tr_vat= 0.000001 tr_gat= 0.168481
+Epoch: 0069 va_obj= 1.7050 va_acc= 0.7140 va_loss= 1.2895 va_l2= 658.1429 va_vat= 0.000001 va_gat= 0.172931
+------- time= 0.70688 ------
+Epoch: 0070 tr_obj= 1.1791 tr_acc= 0.9667 tr_loss= 0.7613 tr_l2= 658.1429 tr_vat= 0.000001 tr_gat= 0.177435
+Epoch: 0070 va_obj= 1.7038 va_acc= 0.7120 va_loss= 1.2813 va_l2= 663.3055 va_vat= 0.000001 va_gat= 0.181731
+------- time= 0.69914 ------
+Epoch: 0071 tr_obj= 1.1720 tr_acc= 0.9667 tr_loss= 0.7502 tr_l2= 663.3055 tr_vat= 0.000001 tr_gat= 0.180283
+Epoch: 0071 va_obj= 1.6995 va_acc= 0.7120 va_loss= 1.2730 va_l2= 668.2277 va_vat= 0.000001 va_gat= 0.184813
+------- time= 0.70450 ------
+Epoch: 0072 tr_obj= 1.1671 tr_acc= 0.9667 tr_loss= 0.7396 tr_l2= 668.2277 tr_vat= 0.000001 tr_gat= 0.186746
+Epoch: 0072 va_obj= 1.6968 va_acc= 0.7120 va_loss= 1.2647 va_l2= 672.9741 va_vat= 0.000001 va_gat= 0.191147
+------- time= 0.71524 ------
+Epoch: 0073 tr_obj= 1.1616 tr_acc= 0.9667 tr_loss= 0.7293 tr_l2= 672.9741 tr_vat= 0.000001 tr_gat= 0.191472
+Epoch: 0073 va_obj= 1.6935 va_acc= 0.7140 va_loss= 1.2569 va_l2= 677.6436 va_vat= 0.000001 va_gat= 0.195608
+------- time= 0.69776 ------
+Epoch: 0074 tr_obj= 1.1533 tr_acc= 0.9667 tr_loss= 0.7191 tr_l2= 677.6436 tr_vat= 0.000001 tr_gat= 0.190840
+Epoch: 0074 va_obj= 1.6876 va_acc= 0.7180 va_loss= 1.2490 va_l2= 682.1578 va_vat= 0.000001 va_gat= 0.195004
+------- time= 0.70479 ------
+Epoch: 0075 tr_obj= 1.1508 tr_acc= 0.9667 tr_loss= 0.7090 tr_l2= 682.1578 tr_vat= 0.000001 tr_gat= 0.201449
+Epoch: 0075 va_obj= 1.6870 va_acc= 0.7180 va_loss= 1.2410 va_l2= 686.3251 va_vat= 0.000001 va_gat= 0.205697
+------- time= 0.69549 ------
+Epoch: 0076 tr_obj= 1.1423 tr_acc= 0.9667 tr_loss= 0.6995 tr_l2= 686.3251 tr_vat= 0.000001 tr_gat= 0.199293
+Epoch: 0076 va_obj= 1.6801 va_acc= 0.7180 va_loss= 1.2333 va_l2= 690.2456 va_vat= 0.000001 va_gat= 0.203295
+------- time= 0.68893 ------
+Epoch: 0077 tr_obj= 1.1383 tr_acc= 0.9667 tr_loss= 0.6901 tr_l2= 690.2456 tr_vat= 0.000001 tr_gat= 0.206114
+Epoch: 0077 va_obj= 1.6780 va_acc= 0.7180 va_loss= 1.2260 va_l2= 693.9666 va_vat= 0.000001 va_gat= 0.210101
+------- time= 0.70204 ------
+Epoch: 0078 tr_obj= 1.1333 tr_acc= 0.9667 tr_loss= 0.6811 tr_l2= 693.9666 tr_vat= 0.000001 tr_gat= 0.210361
+Epoch: 0078 va_obj= 1.6747 va_acc= 0.7140 va_loss= 1.2188 va_l2= 697.4707 va_vat= 0.000001 va_gat= 0.214338
+------- time= 0.71098 ------
+Epoch: 0079 tr_obj= 1.1252 tr_acc= 0.9667 tr_loss= 0.6723 tr_l2= 697.4707 tr_vat= 0.000001 tr_gat= 0.208351
+Epoch: 0079 va_obj= 1.6682 va_acc= 0.7140 va_loss= 1.2116 va_l2= 700.8265 va_vat= 0.000001 va_gat= 0.212290
+------- time= 0.69708 ------
+Epoch: 0080 tr_obj= 1.1229 tr_acc= 0.9667 tr_loss= 0.6636 tr_l2= 700.8265 tr_vat= 0.000001 tr_gat= 0.217750
+Epoch: 0080 va_obj= 1.6675 va_acc= 0.7140 va_loss= 1.2047 va_l2= 704.0429 va_vat= 0.000001 va_gat= 0.221682
+------- time= 0.70259 ------
+Epoch: 0081 tr_obj= 1.1166 tr_acc= 0.9667 tr_loss= 0.6553 tr_l2= 704.0429 tr_vat= 0.000001 tr_gat= 0.218511
+Epoch: 0081 va_obj= 1.6627 va_acc= 0.7140 va_loss= 1.1981 va_l2= 707.1989 va_vat= 0.000001 va_gat= 0.222063
+------- time= 0.70668 ------
+Epoch: 0082 tr_obj= 1.1135 tr_acc= 0.9667 tr_loss= 0.6471 tr_l2= 707.1989 tr_vat= 0.000001 tr_gat= 0.225452
+Epoch: 0082 va_obj= 1.6612 va_acc= 0.7140 va_loss= 1.1914 va_l2= 710.1747 va_vat= 0.000001 va_gat= 0.229308
+------- time= 0.70352 ------
+Epoch: 0083 tr_obj= 1.1107 tr_acc= 0.9667 tr_loss= 0.6392 tr_l2= 710.1747 tr_vat= 0.000001 tr_gat= 0.232674
+Epoch: 0083 va_obj= 1.6597 va_acc= 0.7140 va_loss= 1.1849 va_l2= 713.0576 va_vat= 0.000001 va_gat= 0.236450
+------- time= 0.70476 ------
+Epoch: 0084 tr_obj= 1.1052 tr_acc= 0.9667 tr_loss= 0.6316 tr_l2= 713.0576 tr_vat= 0.000002 tr_gat= 0.234117
+Epoch: 0084 va_obj= 1.6550 va_acc= 0.7140 va_loss= 1.1781 va_l2= 715.9435 va_vat= 0.000002 va_gat= 0.237850
+------- time= 0.70833 ------
+Epoch: 0085 tr_obj= 1.1002 tr_acc= 0.9667 tr_loss= 0.6241 tr_l2= 715.9435 tr_vat= 0.000002 tr_gat= 0.236249
+Epoch: 0085 va_obj= 1.6506 va_acc= 0.7160 va_loss= 1.1712 va_l2= 718.7368 va_vat= 0.000002 va_gat= 0.239960
+------- time= 0.69385 ------
+Epoch: 0086 tr_obj= 1.0979 tr_acc= 0.9667 tr_loss= 0.6167 tr_l2= 718.7368 tr_vat= 0.000001 tr_gat= 0.243694
+Epoch: 0086 va_obj= 1.6488 va_acc= 0.7180 va_loss= 1.1645 va_l2= 721.3260 va_vat= 0.000002 va_gat= 0.247233
+------- time= 0.71129 ------
+Epoch: 0087 tr_obj= 1.0941 tr_acc= 0.9667 tr_loss= 0.6096 tr_l2= 721.3260 tr_vat= 0.000002 tr_gat= 0.247796
+Epoch: 0087 va_obj= 1.6451 va_acc= 0.7180 va_loss= 1.1576 va_l2= 723.8384 va_vat= 0.000002 va_gat= 0.251328
+------- time= 0.70978 ------
+Epoch: 0088 tr_obj= 1.0903 tr_acc= 0.9667 tr_loss= 0.6025 tr_l2= 723.8384 tr_vat= 0.000002 tr_gat= 0.251694
+Epoch: 0088 va_obj= 1.6416 va_acc= 0.7180 va_loss= 1.1508 va_l2= 726.3276 va_vat= 0.000002 va_gat= 0.255285
+------- time= 0.70348 ------
+Epoch: 0089 tr_obj= 1.0836 tr_acc= 0.9667 tr_loss= 0.5956 tr_l2= 726.3276 tr_vat= 0.000002 tr_gat= 0.249669
+Epoch: 0089 va_obj= 1.6354 va_acc= 0.7200 va_loss= 1.1444 va_l2= 728.8078 va_vat= 0.000002 va_gat= 0.253065
+------- time= 0.69513 ------
+Epoch: 0090 tr_obj= 1.0797 tr_acc= 0.9667 tr_loss= 0.5887 tr_l2= 728.8078 tr_vat= 0.000002 tr_gat= 0.253045
+Epoch: 0090 va_obj= 1.6317 va_acc= 0.7240 va_loss= 1.1380 va_l2= 731.2051 va_vat= 0.000002 va_gat= 0.256254
+------- time= 0.69840 ------
+Epoch: 0091 tr_obj= 1.0747 tr_acc= 0.9667 tr_loss= 0.5819 tr_l2= 731.2051 tr_vat= 0.000002 tr_gat= 0.254480
+Epoch: 0091 va_obj= 1.6276 va_acc= 0.7240 va_loss= 1.1320 va_l2= 733.3810 va_vat= 0.000002 va_gat= 0.257790
+------- time= 0.70569 ------
+Epoch: 0092 tr_obj= 1.0716 tr_acc= 0.9667 tr_loss= 0.5754 tr_l2= 733.3810 tr_vat= 0.000002 tr_gat= 0.258927
+Epoch: 0092 va_obj= 1.6250 va_acc= 0.7200 va_loss= 1.1264 va_l2= 735.3363 va_vat= 0.000002 va_gat= 0.261952
+------- time= 0.70179 ------
+Epoch: 0093 tr_obj= 1.0745 tr_acc= 0.9667 tr_loss= 0.5690 tr_l2= 735.3363 tr_vat= 0.000002 tr_gat= 0.275586
+Epoch: 0093 va_obj= 1.6288 va_acc= 0.7180 va_loss= 1.1209 va_l2= 737.1694 va_vat= 0.000002 va_gat= 0.278771
+------- time= 0.70594 ------
+Epoch: 0094 tr_obj= 1.0624 tr_acc= 0.9667 tr_loss= 0.5630 tr_l2= 737.1694 tr_vat= 0.000002 tr_gat= 0.261567
+Epoch: 0094 va_obj= 1.6174 va_acc= 0.7180 va_loss= 1.1157 va_l2= 738.8984 va_vat= 0.000002 va_gat= 0.264495
+------- time= 0.70567 ------
+Epoch: 0095 tr_obj= 1.0630 tr_acc= 0.9667 tr_loss= 0.5571 tr_l2= 738.8984 tr_vat= 0.000002 tr_gat= 0.272814
+Epoch: 0095 va_obj= 1.6183 va_acc= 0.7180 va_loss= 1.1101 va_l2= 740.6520 va_vat= 0.000003 va_gat= 0.275853
+------- time= 0.69749 ------
+Epoch: 0096 tr_obj= 1.0578 tr_acc= 0.9667 tr_loss= 0.5513 tr_l2= 740.6520 tr_vat= 0.000003 tr_gat= 0.272430
+Epoch: 0096 va_obj= 1.6132 va_acc= 0.7180 va_loss= 1.1044 va_l2= 742.1786 va_vat= 0.000002 va_gat= 0.275390
+------- time= 0.70373 ------
+Epoch: 0097 tr_obj= 1.0518 tr_acc= 0.9667 tr_loss= 0.5458 tr_l2= 742.1786 tr_vat= 0.000002 tr_gat= 0.269747
+Epoch: 0097 va_obj= 1.6074 va_acc= 0.7180 va_loss= 1.0992 va_l2= 743.7708 va_vat= 0.000003 va_gat= 0.272506
+------- time= 0.69825 ------
+Epoch: 0098 tr_obj= 1.0517 tr_acc= 0.9667 tr_loss= 0.5403 tr_l2= 743.7708 tr_vat= 0.000002 tr_gat= 0.278980
+Epoch: 0098 va_obj= 1.6080 va_acc= 0.7180 va_loss= 1.0945 va_l2= 745.3011 va_vat= 0.000003 va_gat= 0.281669
+------- time= 0.68891 ------
+Epoch: 0099 tr_obj= 1.0485 tr_acc= 0.9667 tr_loss= 0.5349 tr_l2= 745.3011 tr_vat= 0.000003 tr_gat= 0.282021
+Epoch: 0099 va_obj= 1.6053 va_acc= 0.7200 va_loss= 1.0895 va_l2= 746.7294 va_vat= 0.000003 va_gat= 0.284949
+------- time= 0.70551 ------
+Epoch: 0100 tr_obj= 1.0443 tr_acc= 0.9667 tr_loss= 0.5295 tr_l2= 746.7294 tr_vat= 0.000002 tr_gat= 0.282928
+Epoch: 0100 va_obj= 1.6012 va_acc= 0.7200 va_loss= 1.0844 va_l2= 747.9828 va_vat= 0.000003 va_gat= 0.285642
+------- time= 0.70265 ------
+Epoch: 0101 tr_obj= 1.0419 tr_acc= 0.9667 tr_loss= 0.5245 tr_l2= 747.9828 tr_vat= 0.000003 tr_gat= 0.286861
+Epoch: 0101 va_obj= 1.5988 va_acc= 0.7220 va_loss= 1.0794 va_l2= 749.3140 va_vat= 0.000003 va_gat= 0.289564
+------- time= 0.69979 ------
+Epoch: 0102 tr_obj= 1.0372 tr_acc= 0.9667 tr_loss= 0.5194 tr_l2= 749.3140 tr_vat= 0.000003 tr_gat= 0.286335
+Epoch: 0102 va_obj= 1.5944 va_acc= 0.7240 va_loss= 1.0745 va_l2= 750.6476 va_vat= 0.000003 va_gat= 0.289122
+------- time= 0.71861 ------
+Epoch: 0103 tr_obj= 1.0338 tr_acc= 0.9667 tr_loss= 0.5144 tr_l2= 750.6476 tr_vat= 0.000003 tr_gat= 0.288188
+Epoch: 0103 va_obj= 1.5917 va_acc= 0.7240 va_loss= 1.0704 va_l2= 751.9567 va_vat= 0.000003 va_gat= 0.290704
+------- time= 0.70270 ------
+Epoch: 0104 tr_obj= 1.0334 tr_acc= 0.9667 tr_loss= 0.5096 tr_l2= 751.9567 tr_vat= 0.000003 tr_gat= 0.295833
+Epoch: 0104 va_obj= 1.5922 va_acc= 0.7240 va_loss= 1.0664 va_l2= 753.1177 va_vat= 0.000003 va_gat= 0.298436
+------- time= 0.70004 ------
+Epoch: 0105 tr_obj= 1.0308 tr_acc= 0.9667 tr_loss= 0.5050 tr_l2= 753.1177 tr_vat= 0.000003 tr_gat= 0.298421
+Epoch: 0105 va_obj= 1.5895 va_acc= 0.7200 va_loss= 1.0618 va_l2= 754.4514 va_vat= 0.000004 va_gat= 0.301031
+------- time= 0.70412 ------
+Epoch: 0106 tr_obj= 1.0243 tr_acc= 0.9667 tr_loss= 0.5006 tr_l2= 754.4514 tr_vat= 0.000003 tr_gat= 0.293012
+Epoch: 0106 va_obj= 1.5828 va_acc= 0.7200 va_loss= 1.0573 va_l2= 755.6113 va_vat= 0.000004 va_gat= 0.295341
+------- time= 0.69940 ------
+Epoch: 0107 tr_obj= 1.0265 tr_acc= 0.9667 tr_loss= 0.4961 tr_l2= 755.6113 tr_vat= 0.000003 tr_gat= 0.305137
+Epoch: 0107 va_obj= 1.5846 va_acc= 0.7220 va_loss= 1.0526 va_l2= 756.5341 va_vat= 0.000003 va_gat= 0.307584
+------- time= 0.69121 ------
+Epoch: 0108 tr_obj= 1.0243 tr_acc= 0.9667 tr_loss= 0.4919 tr_l2= 756.5341 tr_vat= 0.000003 tr_gat= 0.308266
+Epoch: 0108 va_obj= 1.5820 va_acc= 0.7240 va_loss= 1.0481 va_l2= 757.2778 va_vat= 0.000004 va_gat= 0.310585
+------- time= 0.69568 ------
+Epoch: 0109 tr_obj= 1.0245 tr_acc= 0.9667 tr_loss= 0.4879 tr_l2= 757.2778 tr_vat= 0.000004 tr_gat= 0.315742
+Epoch: 0109 va_obj= 1.5815 va_acc= 0.7240 va_loss= 1.0434 va_l2= 758.1375 va_vat= 0.000004 va_gat= 0.318060
+------- time= 0.70003 ------
+Epoch: 0110 tr_obj= 1.0160 tr_acc= 0.9667 tr_loss= 0.4840 tr_l2= 758.1375 tr_vat= 0.000004 tr_gat= 0.305738
+Epoch: 0110 va_obj= 1.5724 va_acc= 0.7260 va_loss= 1.0389 va_l2= 759.0230 va_vat= 0.000004 va_gat= 0.307948
+------- time= 0.71006 ------
+Epoch: 0111 tr_obj= 1.0177 tr_acc= 0.9667 tr_loss= 0.4799 tr_l2= 759.0230 tr_vat= 0.000004 tr_gat= 0.316398
+Epoch: 0111 va_obj= 1.5738 va_acc= 0.7280 va_loss= 1.0346 va_l2= 759.8192 va_vat= 0.000004 va_gat= 0.318668
+------- time= 0.70194 ------
+Epoch: 0112 tr_obj= 1.0115 tr_acc= 0.9667 tr_loss= 0.4761 tr_l2= 759.8192 tr_vat= 0.000004 tr_gat= 0.310811
+Epoch: 0112 va_obj= 1.5673 va_acc= 0.7280 va_loss= 1.0305 va_l2= 760.8325 va_vat= 0.000004 va_gat= 0.312901
+------- time= 0.70144 ------
+Epoch: 0113 tr_obj= 1.0131 tr_acc= 0.9667 tr_loss= 0.4722 tr_l2= 760.8325 tr_vat= 0.000004 tr_gat= 0.321121
+Epoch: 0113 va_obj= 1.5691 va_acc= 0.7300 va_loss= 1.0264 va_l2= 761.8294 va_vat= 0.000004 va_gat= 0.323423
+------- time= 0.71733 ------
+Epoch: 0114 tr_obj= 1.0088 tr_acc= 0.9667 tr_loss= 0.4685 tr_l2= 761.8294 tr_vat= 0.000004 tr_gat= 0.318797
+Epoch: 0114 va_obj= 1.5642 va_acc= 0.7300 va_loss= 1.0223 va_l2= 762.8107 va_vat= 0.000004 va_gat= 0.321133
+------- time= 0.70409 ------
+Epoch: 0115 tr_obj= 1.0047 tr_acc= 0.9667 tr_loss= 0.4646 tr_l2= 762.8107 tr_vat= 0.000004 tr_gat= 0.317301
+Epoch: 0115 va_obj= 1.5598 va_acc= 0.7300 va_loss= 1.0182 va_l2= 763.7496 va_vat= 0.000004 va_gat= 0.319415
+------- time= 0.70334 ------
+Epoch: 0116 tr_obj= 1.0047 tr_acc= 0.9667 tr_loss= 0.4606 tr_l2= 763.7496 tr_vat= 0.000005 tr_gat= 0.324388
+Epoch: 0116 va_obj= 1.5604 va_acc= 0.7300 va_loss= 1.0148 va_l2= 764.6174 va_vat= 0.000005 va_gat= 0.326453
+------- time= 0.70305 ------
+Epoch: 0117 tr_obj= 1.0009 tr_acc= 0.9667 tr_loss= 0.4568 tr_l2= 764.6174 tr_vat= 0.000005 tr_gat= 0.323520
+Epoch: 0117 va_obj= 1.5572 va_acc= 0.7300 va_loss= 1.0117 va_l2= 765.3234 va_vat= 0.000005 va_gat= 0.325612
+------- time= 0.70957 ------
+Epoch: 0118 tr_obj= 0.9987 tr_acc= 0.9667 tr_loss= 0.4533 tr_l2= 765.3234 tr_vat= 0.000005 tr_gat= 0.325420
+Epoch: 0118 va_obj= 1.5554 va_acc= 0.7320 va_loss= 1.0087 va_l2= 766.0494 va_vat= 0.000005 va_gat= 0.327341
+------- time= 0.69905 ------
+Epoch: 0119 tr_obj= 0.9952 tr_acc= 0.9667 tr_loss= 0.4498 tr_l2= 766.0494 tr_vat= 0.000005 tr_gat= 0.324900
+Epoch: 0119 va_obj= 1.5526 va_acc= 0.7320 va_loss= 1.0059 va_l2= 766.6005 va_vat= 0.000005 va_gat= 0.326824
+------- time= 0.70924 ------
+Epoch: 0120 tr_obj= 0.9914 tr_acc= 0.9667 tr_loss= 0.4461 tr_l2= 766.6005 tr_vat= 0.000005 tr_gat= 0.324123
+Epoch: 0120 va_obj= 1.5499 va_acc= 0.7320 va_loss= 1.0033 va_l2= 767.0927 va_vat= 0.000005 va_gat= 0.326041
+------- time= 0.70959 ------
+Epoch: 0121 tr_obj= 0.9934 tr_acc= 0.9667 tr_loss= 0.4425 tr_l2= 767.0927 tr_vat= 0.000005 tr_gat= 0.334619
+Epoch: 0121 va_obj= 1.5519 va_acc= 0.7340 va_loss= 1.0000 va_l2= 767.5415 va_vat= 0.000005 va_gat= 0.336196
+------- time= 0.70945 ------
+Epoch: 0122 tr_obj= 0.9926 tr_acc= 0.9667 tr_loss= 0.4392 tr_l2= 767.5415 tr_vat= 0.000005 tr_gat= 0.339211
+Epoch: 0122 va_obj= 1.5514 va_acc= 0.7340 va_loss= 0.9969 va_l2= 768.0089 va_vat= 0.000005 va_gat= 0.341016
+------- time= 0.69841 ------
+Epoch: 0123 tr_obj= 0.9927 tr_acc= 0.9667 tr_loss= 0.4361 tr_l2= 768.0089 tr_vat= 0.000005 tr_gat= 0.345071
+Epoch: 0123 va_obj= 1.5514 va_acc= 0.7340 va_loss= 0.9936 va_l2= 768.7095 va_vat= 0.000006 va_gat= 0.346719
+------- time= 0.71185 ------
+Epoch: 0124 tr_obj= 0.9857 tr_acc= 0.9667 tr_loss= 0.4335 tr_l2= 768.7095 tr_vat= 0.000005 tr_gat= 0.335724
+Epoch: 0124 va_obj= 1.5435 va_acc= 0.7340 va_loss= 0.9899 va_l2= 769.7350 va_vat= 0.000005 va_gat= 0.337558
+------- time= 0.70788 ------
+Epoch: 0125 tr_obj= 0.9848 tr_acc= 0.9667 tr_loss= 0.4306 tr_l2= 769.7350 tr_vat= 0.000005 tr_gat= 0.338703
+Epoch: 0125 va_obj= 1.5418 va_acc= 0.7340 va_loss= 0.9862 va_l2= 770.6528 va_vat= 0.000006 va_gat= 0.340608
+------- time= 0.69761 ------
+Epoch: 0126 tr_obj= 0.9852 tr_acc= 0.9667 tr_loss= 0.4278 tr_l2= 770.6528 tr_vat= 0.000005 tr_gat= 0.344086
+Epoch: 0126 va_obj= 1.5412 va_acc= 0.7360 va_loss= 0.9825 va_l2= 771.4992 va_vat= 0.000006 va_gat= 0.345809
+------- time= 0.70293 ------
+Epoch: 0127 tr_obj= 0.9804 tr_acc= 0.9667 tr_loss= 0.4249 tr_l2= 771.4992 tr_vat= 0.000006 tr_gat= 0.339515
+Epoch: 0127 va_obj= 1.5358 va_acc= 0.7380 va_loss= 0.9791 va_l2= 772.2822 va_vat= 0.000006 va_gat= 0.341093
+------- time= 0.69520 ------
+Epoch: 0128 tr_obj= 0.9839 tr_acc= 0.9667 tr_loss= 0.4218 tr_l2= 772.2822 tr_vat= 0.000006 tr_gat= 0.351989
+Epoch: 0128 va_obj= 1.5395 va_acc= 0.7360 va_loss= 0.9763 va_l2= 772.8538 va_vat= 0.000006 va_gat= 0.353570
+------- time= 0.69829 ------
+Epoch: 0129 tr_obj= 0.9803 tr_acc= 0.9667 tr_loss= 0.4189 tr_l2= 772.8538 tr_vat= 0.000005 tr_gat= 0.349965
+Epoch: 0129 va_obj= 1.5359 va_acc= 0.7380 va_loss= 0.9736 va_l2= 773.1208 va_vat= 0.000006 va_gat= 0.351517
+------- time= 0.70442 ------
+Epoch: 0130 tr_obj= 0.9802 tr_acc= 0.9667 tr_loss= 0.4165 tr_l2= 773.1208 tr_vat= 0.000006 tr_gat= 0.354385
+Epoch: 0130 va_obj= 1.5352 va_acc= 0.7380 va_loss= 0.9706 va_l2= 773.2602 va_vat= 0.000006 va_gat= 0.355806
+------- time= 0.70960 ------
+Epoch: 0131 tr_obj= 0.9806 tr_acc= 0.9667 tr_loss= 0.4143 tr_l2= 773.2602 tr_vat= 0.000006 tr_gat= 0.359335
+Epoch: 0131 va_obj= 1.5346 va_acc= 0.7380 va_loss= 0.9676 va_l2= 773.3320 va_vat= 0.000007 va_gat= 0.360619
+------- time= 0.70321 ------
+Epoch: 0132 tr_obj= 0.9745 tr_acc= 0.9750 tr_loss= 0.4124 tr_l2= 773.3320 tr_vat= 0.000007 tr_gat= 0.350838
+Epoch: 0132 va_obj= 1.5282 va_acc= 0.7400 va_loss= 0.9655 va_l2= 773.3461 va_vat= 0.000007 va_gat= 0.352042
+------- time= 0.70984 ------
+Epoch: 0133 tr_obj= 0.9732 tr_acc= 0.9750 tr_loss= 0.4102 tr_l2= 773.3461 tr_vat= 0.000007 tr_gat= 0.352616
+Epoch: 0133 va_obj= 1.5269 va_acc= 0.7400 va_loss= 0.9632 va_l2= 773.3364 va_vat= 0.000007 va_gat= 0.354011
+------- time= 0.70259 ------
+Epoch: 0134 tr_obj= 0.9728 tr_acc= 0.9750 tr_loss= 0.4078 tr_l2= 773.3364 tr_vat= 0.000006 tr_gat= 0.356797
+Epoch: 0134 va_obj= 1.5270 va_acc= 0.7400 va_loss= 0.9612 va_l2= 773.3012 va_vat= 0.000007 va_gat= 0.358141
+------- time= 0.70108 ------
+Epoch: 0135 tr_obj= 0.9674 tr_acc= 0.9750 tr_loss= 0.4051 tr_l2= 773.3012 tr_vat= 0.000006 tr_gat= 0.351414
+Epoch: 0135 va_obj= 1.5218 va_acc= 0.7400 va_loss= 0.9588 va_l2= 773.2209 va_vat= 0.000007 va_gat= 0.352793
+------- time= 0.69492 ------
+Epoch: 0136 tr_obj= 0.9709 tr_acc= 0.9750 tr_loss= 0.4026 tr_l2= 773.2209 tr_vat= 0.000007 tr_gat= 0.363292
+Epoch: 0136 va_obj= 1.5259 va_acc= 0.7400 va_loss= 0.9570 va_l2= 773.1299 va_vat= 0.000007 va_gat= 0.364689
+------- time= 0.70615 ------
+Epoch: 0137 tr_obj= 0.9668 tr_acc= 0.9750 tr_loss= 0.4004 tr_l2= 773.1299 tr_vat= 0.000007 tr_gat= 0.359702
+Epoch: 0137 va_obj= 1.5221 va_acc= 0.7360 va_loss= 0.9549 va_l2= 773.2659 va_vat= 0.000007 va_gat= 0.361198
+------- time= 0.70969 ------
+Epoch: 0138 tr_obj= 0.9660 tr_acc= 0.9750 tr_loss= 0.3981 tr_l2= 773.2659 tr_vat= 0.000007 tr_gat= 0.362549
+Epoch: 0138 va_obj= 1.5210 va_acc= 0.7360 va_loss= 0.9523 va_l2= 773.4550 va_vat= 0.000007 va_gat= 0.363930
+------- time= 0.69529 ------
+Epoch: 0139 tr_obj= 0.9652 tr_acc= 0.9750 tr_loss= 0.3962 tr_l2= 773.4550 tr_vat= 0.000007 tr_gat= 0.364622
+Epoch: 0139 va_obj= 1.5197 va_acc= 0.7380 va_loss= 0.9498 va_l2= 773.8233 va_vat= 0.000007 va_gat= 0.366098
+------- time= 0.69718 ------
+Epoch: 0140 tr_obj= 0.9618 tr_acc= 0.9750 tr_loss= 0.3942 tr_l2= 773.8233 tr_vat= 0.000008 tr_gat= 0.361372
+Epoch: 0140 va_obj= 1.5155 va_acc= 0.7380 va_loss= 0.9470 va_l2= 774.4172 va_vat= 0.000007 va_gat= 0.362724
+------- time= 0.70076 ------
+Epoch: 0141 tr_obj= 0.9633 tr_acc= 0.9750 tr_loss= 0.3922 tr_l2= 774.4172 tr_vat= 0.000008 tr_gat= 0.367752
+Epoch: 0141 va_obj= 1.5163 va_acc= 0.7400 va_loss= 0.9439 va_l2= 775.4128 va_vat= 0.000008 va_gat= 0.369295
+------- time= 0.70260 ------
+Epoch: 0142 tr_obj= 0.9604 tr_acc= 0.9750 tr_loss= 0.3895 tr_l2= 775.4128 tr_vat= 0.000007 tr_gat= 0.366303
+Epoch: 0142 va_obj= 1.5135 va_acc= 0.7400 va_loss= 0.9413 va_l2= 776.3896 va_vat= 0.000007 va_gat= 0.367975
+------- time= 0.70914 ------
+Epoch: 0143 tr_obj= 0.9609 tr_acc= 0.9750 tr_loss= 0.3869 tr_l2= 776.3896 tr_vat= 0.000007 tr_gat= 0.371629
+Epoch: 0143 va_obj= 1.5140 va_acc= 0.7420 va_loss= 0.9388 va_l2= 777.2567 va_vat= 0.000008 va_gat= 0.373200
+------- time= 0.69665 ------
+Epoch: 0144 tr_obj= 0.9571 tr_acc= 0.9750 tr_loss= 0.3843 tr_l2= 777.2567 tr_vat= 0.000007 tr_gat= 0.368430
+Epoch: 0144 va_obj= 1.5107 va_acc= 0.7400 va_loss= 0.9371 va_l2= 777.6851 va_vat= 0.000008 va_gat= 0.369358
+------- time= 0.70309 ------
+Epoch: 0145 tr_obj= 0.9589 tr_acc= 0.9750 tr_loss= 0.3820 tr_l2= 777.6851 tr_vat= 0.000008 tr_gat= 0.375966
+Epoch: 0145 va_obj= 1.5127 va_acc= 0.7400 va_loss= 0.9352 va_l2= 778.0220 va_vat= 0.000009 va_gat= 0.377002
+------- time= 0.70433 ------
+Epoch: 0146 tr_obj= 0.9589 tr_acc= 0.9750 tr_loss= 0.3800 tr_l2= 778.0220 tr_vat= 0.000009 tr_gat= 0.379708
+Epoch: 0146 va_obj= 1.5130 va_acc= 0.7380 va_loss= 0.9335 va_l2= 778.1323 va_vat= 0.000008 va_gat= 0.380719
+------- time= 0.70539 ------
+Epoch: 0147 tr_obj= 0.9483 tr_acc= 0.9750 tr_loss= 0.3783 tr_l2= 778.1323 tr_vat= 0.000007 tr_gat= 0.361934
+Epoch: 0147 va_obj= 1.5030 va_acc= 0.7360 va_loss= 0.9324 va_l2= 778.1688 va_vat= 0.000008 va_gat= 0.362863
+------- time= 0.69253 ------
+Epoch: 0148 tr_obj= 0.9545 tr_acc= 0.9750 tr_loss= 0.3761 tr_l2= 778.1688 tr_vat= 0.000008 tr_gat= 0.378825
+Epoch: 0148 va_obj= 1.5105 va_acc= 0.7360 va_loss= 0.9316 va_l2= 777.9978 va_vat= 0.000009 va_gat= 0.379825
+------- time= 0.69096 ------
+Epoch: 0149 tr_obj= 0.9532 tr_acc= 0.9750 tr_loss= 0.3741 tr_l2= 777.9978 tr_vat= 0.000009 tr_gat= 0.380308
+Epoch: 0149 va_obj= 1.5099 va_acc= 0.7380 va_loss= 0.9304 va_l2= 777.8746 va_vat= 0.000009 va_gat= 0.381274
+------- time= 0.69967 ------
+Epoch: 0150 tr_obj= 0.9504 tr_acc= 0.9750 tr_loss= 0.3720 tr_l2= 777.8746 tr_vat= 0.000008 tr_gat= 0.378888
+Epoch: 0150 va_obj= 1.5077 va_acc= 0.7380 va_loss= 0.9289 va_l2= 777.7826 va_vat= 0.000009 va_gat= 0.379811
+------- time= 0.70562 ------
+Epoch: 0151 tr_obj= 0.9502 tr_acc= 0.9750 tr_loss= 0.3701 tr_l2= 777.7826 tr_vat= 0.000009 tr_gat= 0.382309
+Epoch: 0151 va_obj= 1.5080 va_acc= 0.7400 va_loss= 0.9276 va_l2= 777.8136 va_vat= 0.000009 va_gat= 0.383098
+------- time= 0.71394 ------
+Epoch: 0152 tr_obj= 0.9439 tr_acc= 0.9750 tr_loss= 0.3685 tr_l2= 777.8136 tr_vat= 0.000009 tr_gat= 0.373074
+Epoch: 0152 va_obj= 1.5015 va_acc= 0.7420 va_loss= 0.9255 va_l2= 778.0323 va_vat= 0.000008 va_gat= 0.373970
+------- time= 0.69815 ------
+Epoch: 0153 tr_obj= 0.9437 tr_acc= 0.9750 tr_loss= 0.3667 tr_l2= 778.0323 tr_vat= 0.000010 tr_gat= 0.376039
+Epoch: 0153 va_obj= 1.5014 va_acc= 0.7440 va_loss= 0.9237 va_l2= 778.4218 va_vat= 0.000009 va_gat= 0.377141
+------- time= 0.71233 ------
+Epoch: 0154 tr_obj= 0.9481 tr_acc= 0.9750 tr_loss= 0.3647 tr_l2= 778.4218 tr_vat= 0.000009 tr_gat= 0.388341
+Epoch: 0154 va_obj= 1.5051 va_acc= 0.7440 va_loss= 0.9211 va_l2= 778.6666 va_vat= 0.000009 va_gat= 0.389240
+------- time= 0.70040 ------
+Epoch: 0155 tr_obj= 0.9474 tr_acc= 0.9750 tr_loss= 0.3630 tr_l2= 778.6666 tr_vat= 0.000008 tr_gat= 0.390162
+Epoch: 0155 va_obj= 1.5035 va_acc= 0.7440 va_loss= 0.9184 va_l2= 779.0525 va_vat= 0.000010 va_gat= 0.391193
+------- time= 0.70522 ------
+Epoch: 0156 tr_obj= 0.9412 tr_acc= 0.9750 tr_loss= 0.3614 tr_l2= 779.0525 tr_vat= 0.000009 tr_gat= 0.380567
+Epoch: 0156 va_obj= 1.4964 va_acc= 0.7440 va_loss= 0.9159 va_l2= 779.4916 va_vat= 0.000009 va_gat= 0.381482
+------- time= 0.70261 ------
+Epoch: 0157 tr_obj= 0.9427 tr_acc= 0.9750 tr_loss= 0.3599 tr_l2= 779.4916 tr_vat= 0.000010 tr_gat= 0.386094
+Epoch: 0157 va_obj= 1.4974 va_acc= 0.7440 va_loss= 0.9139 va_l2= 779.8767 va_vat= 0.000010 va_gat= 0.387109
+------- time= 0.70221 ------
+Epoch: 0158 tr_obj= 0.9396 tr_acc= 0.9750 tr_loss= 0.3584 tr_l2= 779.8767 tr_vat= 0.000010 tr_gat= 0.382493
+Epoch: 0158 va_obj= 1.4938 va_acc= 0.7440 va_loss= 0.9120 va_l2= 780.2246 va_vat= 0.000010 va_gat= 0.383469
+------- time= 0.69674 ------
+Epoch: 0159 tr_obj= 0.9407 tr_acc= 0.9750 tr_loss= 0.3567 tr_l2= 780.2246 tr_vat= 0.000010 tr_gat= 0.387907
+Epoch: 0159 va_obj= 1.4951 va_acc= 0.7440 va_loss= 0.9105 va_l2= 780.4580 va_vat= 0.000009 va_gat= 0.388925
+------- time= 0.69746 ------
+Epoch: 0160 tr_obj= 0.9401 tr_acc= 0.9750 tr_loss= 0.3551 tr_l2= 780.4580 tr_vat= 0.000010 tr_gat= 0.389458
+Epoch: 0160 va_obj= 1.4942 va_acc= 0.7440 va_loss= 0.9087 va_l2= 780.7072 va_vat= 0.000010 va_gat= 0.390250
+------- time= 0.70763 ------
+Epoch: 0161 tr_obj= 0.9391 tr_acc= 0.9750 tr_loss= 0.3538 tr_l2= 780.7072 tr_vat= 0.000010 tr_gat= 0.389998
+Epoch: 0161 va_obj= 1.4929 va_acc= 0.7440 va_loss= 0.9071 va_l2= 781.1238 va_vat= 0.000011 va_gat= 0.390650
+------- time= 0.70122 ------
+Epoch: 0162 tr_obj= 0.9401 tr_acc= 0.9750 tr_loss= 0.3525 tr_l2= 781.1238 tr_vat= 0.000010 tr_gat= 0.394086
+Epoch: 0162 va_obj= 1.4937 va_acc= 0.7440 va_loss= 0.9054 va_l2= 781.4599 va_vat= 0.000011 va_gat= 0.395190
+------- time= 0.70017 ------
+Epoch: 0163 tr_obj= 0.9316 tr_acc= 0.9750 tr_loss= 0.3510 tr_l2= 781.4599 tr_vat= 0.000011 tr_gat= 0.379802
+Epoch: 0163 va_obj= 1.4839 va_acc= 0.7440 va_loss= 0.9025 va_l2= 782.0105 va_vat= 0.000011 va_gat= 0.380790
+------- time= 0.71021 ------
+Epoch: 0164 tr_obj= 0.9376 tr_acc= 0.9750 tr_loss= 0.3490 tr_l2= 782.0105 tr_vat= 0.000011 tr_gat= 0.395344
+Epoch: 0164 va_obj= 1.4898 va_acc= 0.7440 va_loss= 0.9006 va_l2= 782.1469 va_vat= 0.000010 va_gat= 0.396332
+------- time= 0.70102 ------
+Epoch: 0165 tr_obj= 0.9350 tr_acc= 0.9750 tr_loss= 0.3474 tr_l2= 782.1469 tr_vat= 0.000011 tr_gat= 0.393154
+Epoch: 0165 va_obj= 1.4868 va_acc= 0.7440 va_loss= 0.8986 va_l2= 782.2589 va_vat= 0.000010 va_gat= 0.393995
+------- time= 0.70600 ------
+Epoch: 0166 tr_obj= 0.9339 tr_acc= 0.9750 tr_loss= 0.3460 tr_l2= 782.2589 tr_vat= 0.000011 tr_gat= 0.393506
+Epoch: 0166 va_obj= 1.4853 va_acc= 0.7440 va_loss= 0.8967 va_l2= 782.6262 va_vat= 0.000010 va_gat= 0.394568
+------- time= 0.69192 ------
+Epoch: 0167 tr_obj= 0.9337 tr_acc= 0.9750 tr_loss= 0.3441 tr_l2= 782.6262 tr_vat= 0.000011 tr_gat= 0.396571
+Epoch: 0167 va_obj= 1.4855 va_acc= 0.7440 va_loss= 0.8956 va_l2= 782.6292 va_vat= 0.000011 va_gat= 0.397160
+------- time= 0.70439 ------
+Epoch: 0168 tr_obj= 0.9321 tr_acc= 0.9750 tr_loss= 0.3428 tr_l2= 782.6292 tr_vat= 0.000011 tr_gat= 0.395798
+Epoch: 0168 va_obj= 1.4844 va_acc= 0.7440 va_loss= 0.8945 va_l2= 782.7820 va_vat= 0.000010 va_gat= 0.396886
+------- time= 0.71420 ------
+Epoch: 0169 tr_obj= 0.9316 tr_acc= 0.9750 tr_loss= 0.3414 tr_l2= 782.7820 tr_vat= 0.000011 tr_gat= 0.397503
+Epoch: 0169 va_obj= 1.4845 va_acc= 0.7420 va_loss= 0.8939 va_l2= 782.9718 va_vat= 0.000012 va_gat= 0.398232
+------- time= 0.70074 ------
+Epoch: 0170 tr_obj= 0.9334 tr_acc= 0.9750 tr_loss= 0.3401 tr_l2= 782.9718 tr_vat= 0.000011 tr_gat= 0.403733
+Epoch: 0170 va_obj= 1.4867 va_acc= 0.7440 va_loss= 0.8929 va_l2= 783.2146 va_vat= 0.000012 va_gat= 0.404426
+------- time= 0.70299 ------
+Epoch: 0171 tr_obj= 0.9280 tr_acc= 0.9750 tr_loss= 0.3385 tr_l2= 783.2146 tr_vat= 0.000011 tr_gat= 0.395720
+Epoch: 0171 va_obj= 1.4816 va_acc= 0.7440 va_loss= 0.8914 va_l2= 783.6530 va_vat= 0.000011 va_gat= 0.396773
+------- time= 0.70212 ------
+Epoch: 0172 tr_obj= 0.9306 tr_acc= 0.9750 tr_loss= 0.3366 tr_l2= 783.6530 tr_vat= 0.000011 tr_gat= 0.404511
+Epoch: 0172 va_obj= 1.4849 va_acc= 0.7420 va_loss= 0.8900 va_l2= 784.3302 va_vat= 0.000013 va_gat= 0.405442
+------- time= 0.69547 ------
+Epoch: 0173 tr_obj= 0.9259 tr_acc= 0.9750 tr_loss= 0.3344 tr_l2= 784.3302 tr_vat= 0.000013 tr_gat= 0.398570
+Epoch: 0173 va_obj= 1.4803 va_acc= 0.7440 va_loss= 0.8882 va_l2= 784.8962 va_vat= 0.000012 va_gat= 0.399285
+------- time= 0.71038 ------
+Epoch: 0174 tr_obj= 0.9260 tr_acc= 0.9750 tr_loss= 0.3328 tr_l2= 784.8962 tr_vat= 0.000012 tr_gat= 0.401463
+Epoch: 0174 va_obj= 1.4808 va_acc= 0.7440 va_loss= 0.8870 va_l2= 785.3503 va_vat= 0.000012 va_gat= 0.402197
+------- time= 0.69477 ------
+Epoch: 0175 tr_obj= 0.9272 tr_acc= 0.9750 tr_loss= 0.3314 tr_l2= 785.3503 tr_vat= 0.000013 tr_gat= 0.406319
+Epoch: 0175 va_obj= 1.4821 va_acc= 0.7440 va_loss= 0.8858 va_l2= 785.7228 va_vat= 0.000011 va_gat= 0.406709
+------- time= 0.70618 ------
+Epoch: 0176 tr_obj= 0.9281 tr_acc= 0.9750 tr_loss= 0.3304 tr_l2= 785.7228 tr_vat= 0.000013 tr_gat= 0.409630
+Epoch: 0176 va_obj= 1.4833 va_acc= 0.7440 va_loss= 0.8853 va_l2= 786.0315 va_vat= 0.000011 va_gat= 0.409922
+------- time= 0.69615 ------
+Epoch: 0177 tr_obj= 0.9263 tr_acc= 0.9750 tr_loss= 0.3298 tr_l2= 786.0315 tr_vat= 0.000013 tr_gat= 0.406876
+Epoch: 0177 va_obj= 1.4814 va_acc= 0.7440 va_loss= 0.8849 va_l2= 786.1872 va_vat= 0.000013 va_gat= 0.407000
+------- time= 0.71268 ------
+Epoch: 0178 tr_obj= 0.9276 tr_acc= 0.9750 tr_loss= 0.3293 tr_l2= 786.1872 tr_vat= 0.000013 tr_gat= 0.410407
+Epoch: 0178 va_obj= 1.4827 va_acc= 0.7440 va_loss= 0.8840 va_l2= 786.3746 va_vat= 0.000014 va_gat= 0.410890
+------- time= 0.70255 ------
+Epoch: 0179 tr_obj= 0.9273 tr_acc= 0.9750 tr_loss= 0.3283 tr_l2= 786.3746 tr_vat= 0.000013 tr_gat= 0.411760
+Epoch: 0179 va_obj= 1.4820 va_acc= 0.7440 va_loss= 0.8825 va_l2= 786.5079 va_vat= 0.000012 va_gat= 0.412596
+------- time= 0.69393 ------
+Epoch: 0180 tr_obj= 0.9263 tr_acc= 0.9750 tr_loss= 0.3270 tr_l2= 786.5079 tr_vat= 0.000013 tr_gat= 0.412033
+Epoch: 0180 va_obj= 1.4808 va_acc= 0.7480 va_loss= 0.8813 va_l2= 786.2993 va_vat= 0.000014 va_gat= 0.412770
+------- time= 0.70420 ------
+Epoch: 0181 tr_obj= 0.9222 tr_acc= 0.9750 tr_loss= 0.3261 tr_l2= 786.2993 tr_vat= 0.000013 tr_gat= 0.406010
+Epoch: 0181 va_obj= 1.4770 va_acc= 0.7480 va_loss= 0.8805 va_l2= 786.2553 va_vat= 0.000012 va_gat= 0.406844
+------- time= 0.69352 ------
+Epoch: 0182 tr_obj= 0.9231 tr_acc= 0.9750 tr_loss= 0.3247 tr_l2= 786.2553 tr_vat= 0.000013 tr_gat= 0.410539
+Epoch: 0182 va_obj= 1.4788 va_acc= 0.7460 va_loss= 0.8799 va_l2= 786.2476 va_vat= 0.000014 va_gat= 0.411543
+------- time= 0.70524 ------
+Epoch: 0183 tr_obj= 0.9244 tr_acc= 0.9750 tr_loss= 0.3230 tr_l2= 786.2476 tr_vat= 0.000014 tr_gat= 0.416513
+Epoch: 0183 va_obj= 1.4818 va_acc= 0.7460 va_loss= 0.8800 va_l2= 786.3053 va_vat= 0.000014 va_gat= 0.417206
+------- time= 0.71045 ------
+Epoch: 0184 tr_obj= 0.9185 tr_acc= 0.9750 tr_loss= 0.3218 tr_l2= 786.3053 tr_vat= 0.000014 tr_gat= 0.406999
+Epoch: 0184 va_obj= 1.4767 va_acc= 0.7460 va_loss= 0.8797 va_l2= 786.6246 va_vat= 0.000013 va_gat= 0.407494
+------- time= 0.71261 ------
+Epoch: 0185 tr_obj= 0.9161 tr_acc= 0.9750 tr_loss= 0.3205 tr_l2= 786.6246 tr_vat= 0.000014 tr_gat= 0.404532
+Epoch: 0185 va_obj= 1.4743 va_acc= 0.7440 va_loss= 0.8784 va_l2= 786.9013 va_vat= 0.000015 va_gat= 0.404999
+------- time= 0.70558 ------
+Epoch: 0186 tr_obj= 0.9186 tr_acc= 0.9750 tr_loss= 0.3193 tr_l2= 786.9013 tr_vat= 0.000013 tr_gat= 0.411699
+Epoch: 0186 va_obj= 1.4763 va_acc= 0.7420 va_loss= 0.8768 va_l2= 787.0842 va_vat= 0.000014 va_gat= 0.411860
+------- time= 0.69809 ------
+Epoch: 0187 tr_obj= 0.9201 tr_acc= 0.9750 tr_loss= 0.3182 tr_l2= 787.0842 tr_vat= 0.000017 tr_gat= 0.416670
+Epoch: 0187 va_obj= 1.4782 va_acc= 0.7400 va_loss= 0.8760 va_l2= 787.3583 va_vat= 0.000015 va_gat= 0.417075
+------- time= 0.70163 ------
+Epoch: 0188 tr_obj= 0.9158 tr_acc= 0.9750 tr_loss= 0.3174 tr_l2= 787.3583 tr_vat= 0.000014 tr_gat= 0.409447
+Epoch: 0188 va_obj= 1.4740 va_acc= 0.7400 va_loss= 0.8750 va_l2= 787.6360 va_vat= 0.000013 va_gat= 0.410315
+------- time= 0.69389 ------
+Epoch: 0189 tr_obj= 0.9194 tr_acc= 0.9750 tr_loss= 0.3161 tr_l2= 787.6360 tr_vat= 0.000016 tr_gat= 0.418922
+Epoch: 0189 va_obj= 1.4792 va_acc= 0.7400 va_loss= 0.8751 va_l2= 787.9423 va_vat= 0.000013 va_gat= 0.420205
+------- time= 0.70113 ------
+Epoch: 0190 tr_obj= 0.9122 tr_acc= 0.9750 tr_loss= 0.3144 tr_l2= 787.9423 tr_vat= 0.000014 tr_gat= 0.407543
+Epoch: 0190 va_obj= 1.4737 va_acc= 0.7400 va_loss= 0.8756 va_l2= 788.0723 va_vat= 0.000014 va_gat= 0.408250
+------- time= 0.71000 ------
+Epoch: 0191 tr_obj= 0.9093 tr_acc= 0.9750 tr_loss= 0.3130 tr_l2= 788.0723 tr_vat= 0.000013 tr_gat= 0.404547
+Epoch: 0191 va_obj= 1.4720 va_acc= 0.7360 va_loss= 0.8754 va_l2= 788.1462 va_vat= 0.000013 va_gat= 0.404989
+------- time= 0.70720 ------
+Epoch: 0192 tr_obj= 0.9138 tr_acc= 0.9750 tr_loss= 0.3117 tr_l2= 788.1462 tr_vat= 0.000015 tr_gat= 0.416114
+Epoch: 0192 va_obj= 1.4764 va_acc= 0.7360 va_loss= 0.8741 va_l2= 788.1107 va_vat= 0.000015 va_gat= 0.416486
+------- time= 0.71222 ------
+Epoch: 0193 tr_obj= 0.9116 tr_acc= 0.9750 tr_loss= 0.3109 tr_l2= 788.1107 tr_vat= 0.000015 tr_gat= 0.413272
+Epoch: 0193 va_obj= 1.4738 va_acc= 0.7360 va_loss= 0.8728 va_l2= 788.0951 va_vat= 0.000014 va_gat= 0.413741
+------- time= 0.69291 ------
+Epoch: 0194 tr_obj= 0.9150 tr_acc= 0.9750 tr_loss= 0.3099 tr_l2= 788.0951 tr_vat= 0.000016 tr_gat= 0.422155
+Epoch: 0194 va_obj= 1.4768 va_acc= 0.7360 va_loss= 0.8714 va_l2= 788.1725 va_vat= 0.000016 va_gat= 0.422515
+------- time= 0.70330 ------
+Epoch: 0195 tr_obj= 0.9182 tr_acc= 0.9750 tr_loss= 0.3091 tr_l2= 788.1725 tr_vat= 0.000014 tr_gat= 0.429988
+Epoch: 0195 va_obj= 1.4794 va_acc= 0.7380 va_loss= 0.8702 va_l2= 788.1379 va_vat= 0.000014 va_gat= 0.430196
+------- time= 0.71885 ------
+Epoch: 0196 tr_obj= 0.9140 tr_acc= 0.9750 tr_loss= 0.3087 tr_l2= 788.1379 tr_vat= 0.000015 tr_gat= 0.422482
+Epoch: 0196 va_obj= 1.4744 va_acc= 0.7400 va_loss= 0.8690 va_l2= 788.1402 va_vat= 0.000016 va_gat= 0.422740
+------- time= 0.70731 ------
+Epoch: 0197 tr_obj= 0.9078 tr_acc= 0.9750 tr_loss= 0.3080 tr_l2= 788.1402 tr_vat= 0.000016 tr_gat= 0.411464
+Epoch: 0197 va_obj= 1.4683 va_acc= 0.7440 va_loss= 0.8682 va_l2= 788.1788 va_vat= 0.000014 va_gat= 0.411967
+------- time= 0.70691 ------
+Epoch: 0198 tr_obj= 0.9161 tr_acc= 0.9750 tr_loss= 0.3069 tr_l2= 788.1788 tr_vat= 0.000016 tr_gat= 0.430299
+Epoch: 0198 va_obj= 1.4771 va_acc= 0.7440 va_loss= 0.8672 va_l2= 788.5162 va_vat= 0.000015 va_gat= 0.431101
+------- time= 0.69839 ------
+Epoch: 0199 tr_obj= 0.9052 tr_acc= 0.9750 tr_loss= 0.3058 tr_l2= 788.5162 tr_vat= 0.000015 tr_gat= 0.410241
+Epoch: 0199 va_obj= 1.4657 va_acc= 0.7420 va_loss= 0.8658 va_l2= 789.0441 va_vat= 0.000014 va_gat= 0.410689
+------- time= 0.70336 ------
+Epoch: 0200 tr_obj= 0.9082 tr_acc= 0.9750 tr_loss= 0.3043 tr_l2= 789.0441 tr_vat= 0.000015 tr_gat= 0.418802
+Epoch: 0200 va_obj= 1.4687 va_acc= 0.7420 va_loss= 0.8643 va_l2= 789.3864 va_vat= 0.000015 va_gat= 0.419223
+------- time= 0.69934 ------
