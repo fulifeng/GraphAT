@@ -5,11 +5,13 @@ Code for the GraphAT, GraphVAT, and GCN-VAT in our paper "Graph Adversarial Trai
 ## Environment
 
 Python 3.6.1 :: Continuum Analytics, Inc.
+
 tensorflow                         1.8.0
+
 numpy                              1.18.1
 
 ## Reproduction
-
+Once configured the required environment, the prediction performance reported in our paper can be reproduced by running the following commands (Table 4).
 
 ### GraphAT
 
